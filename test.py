@@ -1,3 +1,3 @@
 import sys
-print("test passes")
-sys.exit(0)
+print("test fails")
+sys.exit(1)
