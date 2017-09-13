@@ -10,6 +10,7 @@ pipeline {
             steps {
                 bat 'python --version'
                 bat 'python test.py'
+                echo "done"
             }
         }
     }
