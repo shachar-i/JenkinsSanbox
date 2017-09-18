@@ -8,8 +8,8 @@ pipeline {
                 bat 'git log -n 5'
                 bat 'git remote -v'
                 bat 'git branch'
-                bat 'git config --global user.name'
-                bat 'git config --global user.email'
+                bat 'git config user.name'
+                bat 'git config user.email'
             }
         }
         stage('build') {
