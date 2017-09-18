@@ -4,6 +4,7 @@ pipeline {
       stage('debug') {
             steps {
                 echo "hello 2"
+                git status
             }
         }
         stage('build') {
