@@ -4,7 +4,7 @@ pipeline {
       stage('debug') {
             steps {
                 echo "hello 2"
-                git status
+                bat 'git status'
             }
         }
         stage('build') {
