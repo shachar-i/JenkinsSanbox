@@ -17,7 +17,7 @@ pipeline {
             }
         }
     }
-    
+
     post {
     success {
         emailext (
@@ -30,7 +30,6 @@ pipeline {
                 [$class: 'UpstreamComitterRecipientProvider']
             ]
         )
-        echo RECIPIENTS
     }
 
     failure {
