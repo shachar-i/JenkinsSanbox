@@ -21,7 +21,7 @@ pipeline {
     post {
     success {
     
-        final def RECIPIENTS = emailextrecipients([
+        def RECIPIENTS = emailextrecipients([
             [$class: 'DevelopersRecipientProvider'],
             [$class: 'CulpritsRecipientProvider'],
             [$class: 'UpstreamComitterRecipientProvider']
